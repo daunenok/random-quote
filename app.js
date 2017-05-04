@@ -18,7 +18,6 @@ $.ajax({url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filte
                            $('#quote-title').text();
             twitText = twitText.replace(/ /g, "%20");
             $(".twitter-share-button").attr("href", twitText);
-            console.log($(".twitter-share-button").attr("href"));
         },
         cache: false
        });
