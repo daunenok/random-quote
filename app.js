@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 function getQuote() {
-$.ajax({url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+$.ajax({url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
         success: function(data) {
             var post = data.shift(); 
             $('#quote-title').text(post.title);
